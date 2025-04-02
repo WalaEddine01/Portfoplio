@@ -18,16 +18,27 @@ export default function Page() {
 
           <div className="flex flex-col lg:flex-row gap-6">
             <div className="lg:w-2/3">
-              <p className="text-slate leading-relaxed text-sm max-w-2xl">
-                I'm a Software Engineer & Cybersecurity Enthusiast focused on designing and developing software
-                solutions. With experience in both LAMP and MERN stacks for full-stack development, I've built various
-                applications ranging from web platforms to low-level projects like a basic compiler and a simple shell.
-              </p>
-              <p className="text-slate leading-relaxed text-sm max-w-2xl mt-4">
-                Currently pursuing Information Security Engineering at the University of Batna 2 in Algeria, I'm
-                constantly sharpening my technical skills and looking for opportunities to contribute to impactful tech
-                solutions. My passion lies at the intersection of software development and cybersecurity.
-              </p>
+            <p className="text-slate leading-relaxed text-sm max-w-2xl">
+    <span className="block mb-4">
+        Wala Eddine Boulebbina – Software Engineer & Cybersecurity Enthusiast focused on designing and developing software solutions.
+    </span>
+
+    <span className="block mb-4">
+        Experienced in backend development with strong programming skills in C, Python, JavaScript, and TypeScript.
+    </span>
+
+    <span className="block mb-4">
+        Currently enrolled in the ALX Backend Pro Dev program, focusing on advanced backend concepts.
+    </span>
+
+    <span className="block mb-4">
+        Has built low-level projects like a basic compiler and a simple shell.
+    </span>
+
+    <span className="block mb-4">
+        Passionate about creating scalable, efficient, and maintainable systems, with hands-on experience in project management and Agile methodologies.
+    </span>
+</p>
 
               <div className="mt-6">
                 <Link
@@ -48,7 +59,10 @@ export default function Page() {
           <div className="mt-8">
             <h3 className="text-md font-semibold text-slate-light mb-3">Education</h3>
             <div className="bg-navy-light/30 rounded-lg p-5 border border-slate/5">
-              <h4 className="text-sm font-medium text-slate-light">University of Batna 2 – Batna, Algeria</h4>
+              <h4 className="text-sm font-medium text-slate-light">
+                <a href="https://univ-batna2.dz/">University of Batna 2 – Batna, Algeria
+                </a>
+              </h4>
               <p className="text-xs text-slate-dark">September 2022 – June 2027</p>
               <p className="text-sm text-slate mt-1">Information Security - Engineering</p>
             </div>

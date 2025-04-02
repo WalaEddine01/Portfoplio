@@ -11,7 +11,13 @@ export const metadata: Metadata = {
   title: "Wala Eddine Boulebbina | Software Engineer",
   description:
     "Software Engineer & Cybersecurity Enthusiast specializing in full-stack development with LAMP and MERN stacks",
-  generator: "v0.dev",
+  keywords: [
+    "Software Engineer",
+    "Cybersecurity Enthusiast",
+    "Full Stack Developer",
+    "LAMP Stack",
+    "MERN Stack",
+  ],
 }
 
 export default function RootLayout({

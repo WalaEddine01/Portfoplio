@@ -69,7 +69,7 @@ export default function Sidebar() {
             >
               <div className="text-content absolute">
                 <h1 className="text-xl font-semibold text-slate-light mb-2">Wala Eddine Boulebbina</h1>
-                <p className="text-xs text-slate">Software Engineer & Cybersecurity Enthusiast</p>
+                <p className="text-xs text-slate">Enhancing tech skills to make an impact.</p>
               </div>
               <Image src="/logo.png" alt="Wala Eddine Logo" width={120} height={120} className="logo-hover" />
             </Link>
