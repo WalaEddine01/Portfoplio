@@ -1,71 +1,192 @@
 import Sidebar from "@/components/sidebar"
 import ProjectCard from "@/components/project-card"
 import JobExperience from "@/components/job-experience"
+import TechBadge from "@/components/tech-badge"
+import CertificationCard from "@/components/certification-card"
+import ElevatorPitch from "@/components/elevator-pitch"
+import Link from "next/link"
+import { FileText } from "lucide-react"
 
 export default function Page() {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <Sidebar />
 
       <main className="main-content">
         <section id="about" className="mb-16 pt-4">
           <h2 className="text-lg font-semibold text-slate-light mb-3">About Me</h2>
-          <p className="text-slate leading-relaxed text-sm max-w-2xl">
-            I'm a passionate software engineer with a strong interest in cybersecurity. I enjoy building web
-            applications and exploring new technologies. My expertise includes full-stack development with both LAMP and
-            MERN stacks, with a focus on creating secure, scalable, and user-friendly applications.
-          </p>
-          <p className="text-slate leading-relaxed text-sm max-w-2xl mt-4">
-            With a background in computer science and several years of industry experience, I've developed a keen eye
-            for detail and a commitment to writing clean, maintainable code. I'm constantly learning and adapting to new
-            technologies and methodologies to stay at the forefront of the rapidly evolving tech landscape.
-          </p>
+
+          <div className="flex flex-col lg:flex-row gap-6">
+            <div className="lg:w-2/3">
+              <p className="text-slate leading-relaxed text-sm max-w-2xl">
+                I'm a Software Engineer & Cybersecurity Enthusiast focused on designing and developing software
+                solutions. With experience in both LAMP and MERN stacks for full-stack development, I've built various
+                applications ranging from web platforms to low-level projects like a basic compiler and a simple shell.
+              </p>
+              <p className="text-slate leading-relaxed text-sm max-w-2xl mt-4">
+                Currently pursuing Information Security Engineering at the University of Batna 2 in Algeria, I'm
+                constantly sharpening my technical skills and looking for opportunities to contribute to impactful tech
+                solutions. My passion lies at the intersection of software development and cybersecurity.
+              </p>
+
+              <div className="mt-6">
+                <Link
+                  href="/resume"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-navy-light/50 hover:bg-navy-light/70 text-slate-light rounded-md border border-slate/10 transition-colors"
+                >
+                  <FileText className="w-4 h-4" />
+                  <span>View Full Resume</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:w-1/3">
+              <ElevatorPitch />
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-md font-semibold text-slate-light mb-3">Education</h3>
+            <div className="bg-navy-light/30 rounded-lg p-5 border border-slate/5">
+              <h4 className="text-sm font-medium text-slate-light">University of Batna 2 – Batna, Algeria</h4>
+              <p className="text-xs text-slate-dark">September 2022 – June 2027</p>
+              <p className="text-sm text-slate mt-1">Information Security - Engineering</p>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-md font-semibold text-slate-light mb-3">Certifications</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <CertificationCard
+                title="Software Engineering Program"
+                organization="Alx Africa"
+                date="June 2023 - June 2024"
+                imageUrl="/placeholder.svg?height=100&width=100&text=ALX"
+              />
+              <CertificationCard
+                title="AICE Program"
+                organization="Alx Africa"
+                date="April 2024"
+                imageUrl="/placeholder.svg?height=100&width=100&text=AICE"
+              />
+              <CertificationCard
+                title="35 hour PMP Training"
+                organization="benhamouda consulting"
+                date="February 2025"
+                imageUrl="/placeholder.svg?height=100&width=100&text=PMP"
+              />
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-md font-semibold text-slate-light mb-3">Skills</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-sm font-medium text-slate-light mb-2">Programming</h4>
+                <div className="flex flex-wrap">
+                  {["C", "Python", "JavaScript", "TypeScript"].map((skill) => (
+                    <TechBadge key={skill} name={skill} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-medium text-slate-light mb-2">Web Development</h4>
+                <div className="flex flex-wrap">
+                  {["LAMP Stack", "MERN Stack", "React", "Node.js"].map((skill) => (
+                    <TechBadge key={skill} name={skill} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-medium text-slate-light mb-2">Tools & Frameworks</h4>
+                <div className="flex flex-wrap">
+                  {["Docker", "Git", "Linux", "CI/CD Pipelines"].map((skill) => (
+                    <TechBadge key={skill} name={skill} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-medium text-slate-light mb-2">Project Management</h4>
+                <div className="flex flex-wrap">
+                  {["Agile", "Waterfall", "Team Leadership", "Task Prioritization"].map((skill) => (
+                    <TechBadge key={skill} name={skill} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="experience" className="mb-16">
           <h2 className="text-lg font-semibold text-slate-light mb-3">Experience</h2>
           <JobExperience
-            dateRange="2022 - Present"
+            dateRange="February 2023 - March 2024"
             title="Software Engineer"
-            company="Example Corp"
-            companyUrl="https://example.com"
-            description="Developed and maintained web applications using React, Node.js, and other modern technologies. Implemented security best practices and optimized application performance."
-            technologies={["React", "Node.js", "JavaScript", "TypeScript"]}
+            company="Alx Africa"
+            companyUrl="https://www.alxafrica.com"
+            description="Designed, built, and deployed OrgSchool, a comprehensive Student Management System (SMS) that streamlines educational administration processes."
+            technologies={["JavaScript", "React", "Node.js", "MongoDB"]}
           />
           <JobExperience
-            dateRange="2020 - 2022"
-            title="Frontend Developer"
-            company="Tech Solutions"
-            companyUrl="https://example.com"
-            description="Built responsive user interfaces using modern frontend frameworks. Collaborated with designers and backend developers to implement new features."
-            technologies={["React", "Vue.js", "CSS", "HTML"]}
+            dateRange="June 2024 - July 2024"
+            title="Software Engineer & Project Manager"
+            company="Alx Africa"
+            companyUrl="https://www.alxafrica.com"
+            description="Led the development team and designed, built, and deployed Whisper, a real-time chat application with secure messaging capabilities."
+            technologies={["TypeScript", "React", "Socket.io", "Express"]}
+          />
+          <JobExperience
+            dateRange="August 2023"
+            title="Developer"
+            company="Alx Africa"
+            companyUrl="https://www.alxafrica.com"
+            description="Developed a simple shell (bash-like) implementation, demonstrating proficiency in low-level programming and system interactions."
+            technologies={["C", "Linux", "Shell Scripting"]}
+          />
+
+          <h3 className="text-md font-semibold text-slate-light mt-8 mb-3">Volunteer Activities</h3>
+          <JobExperience
+            dateRange="July 2024 - Present"
+            title="Project Manager & Developer"
+            company="Algerian Tech Maker"
+            companyUrl="https://algerian-tech-maker.com"
+            description="Leading and contributing to tech-driven projects, collaborating with teams to develop innovative solutions, and supporting a community for aspiring developers."
+            technologies={["Project Management", "Web Development", "Team Leadership"]}
+          />
+          <JobExperience
+            dateRange="July 2024 - Present"
+            title="Content Creator & Media"
+            company="Algerian Tech Maker"
+            companyUrl="https://algerian-tech-maker.com"
+            description="Hosting live sessions and creating engaging content to share tech insights and support the community."
+            technologies={["Content Creation", "Live Streaming", "Technical Writing"]}
           />
         </section>
 
         <section id="projects" className="mb-16">
           <h2 className="text-lg font-semibold text-slate-light mb-3">Projects</h2>
           <ProjectCard
-            title="Project Alpha"
-            description="A secure authentication system with multi-factor authentication and role-based access control."
+            title="OrgSchool"
+            description="A comprehensive Student Management System (SMS) designed to streamline educational administration processes, including student enrollment, grade tracking, and attendance management."
             imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://example.com/project1"
+            projectUrl="https://github.com/WalaEddine01"
             technologies={["React", "Node.js", "MongoDB", "Express"]}
             stars={120}
           />
           <ProjectCard
-            title="Data Visualizer"
-            description="An interactive dashboard for visualizing complex datasets with customizable charts and filters."
+            title="Whisper"
+            description="A real-time chat application with end-to-end encryption, allowing secure communication between users. Features include message history, file sharing, and user authentication."
             imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://example.com/project2"
-            technologies={["D3.js", "React", "TypeScript", "Firebase"]}
+            projectUrl="https://github.com/WalaEddine01"
+            technologies={["React", "Socket.io", "Node.js", "MongoDB"]}
             stars={85}
           />
           <ProjectCard
-            title="Secure Chat"
-            description="End-to-end encrypted messaging application with ephemeral messages and secure file sharing."
+            title="Simple Shell"
+            description="A bash-like shell implementation that supports basic command execution, piping, redirection, and environment variable management. Built as a demonstration of low-level programming skills."
             imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://example.com/project3"
-            technologies={["WebRTC", "React", "Node.js", "Socket.io"]}
+            projectUrl="https://github.com/WalaEddine01"
+            technologies={["C", "Linux", "System Programming"]}
           />
         </section>
       </main>

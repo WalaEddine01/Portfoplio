@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <CursorEffect />
-          <div className="bg-pattern">{children}</div>
+          <div>{children}</div>
         </ThemeProvider>
       </body>
     </html>

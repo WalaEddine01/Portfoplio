@@ -9,7 +9,11 @@ const navItems = [
   { name: "PROJECTS", path: "#projects" },
 ]
 
-export default function Navigation() {
+interface NavigationProps {
+  onNavClick?: () => void
+}
+
+export default function Navigation({ onNavClick }: NavigationProps) {
   const [activeSection, setActiveSection] = useState("")
 
   useEffect(() => {
@@ -27,6 +31,11 @@ export default function Navigation() {
             behavior: "smooth",
           })
           setActiveSection(href)
+
+          // Close mobile menu if provided
+          if (onNavClick) {
+            onNavClick()
+          }
         }
       }
     }
@@ -59,7 +68,7 @@ export default function Navigation() {
       document.removeEventListener("click", handleNavClick)
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [])
+  }, [onNavClick])
 
   return (
     <nav className="mb-8">

@@ -37,7 +37,7 @@ export default function CursorEffect() {
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       style={{
-        background: `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(176, 176, 176, 0.08), transparent 80%)`,
+        background: `radial-gradient(300px at ${position.x}px ${position.y}px, rgba(176, 176, 176, 0.05), transparent 80%)`,
       }}
     />
   )
