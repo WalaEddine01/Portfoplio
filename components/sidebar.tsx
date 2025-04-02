@@ -4,6 +4,7 @@ import Image from "next/image"
 import Navigation from "./navigation"
 import SocialIcons from "./social-icons"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,7 +42,7 @@ export default function Sidebar() {
 
     window.addEventListener("resize", handleResize)
     return () => {
-      window.removeEventListener("resize", handleResize)
+      document.removeEventListener("resize", handleResize)
     }
   }, [])
 
@@ -61,13 +62,17 @@ export default function Sidebar() {
       <aside id="sidebar" className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>
         <div className="flex flex-col h-full justify-between">
           <div>
-            <div className="logo-hover-container mb-8 h-[80px] flex items-center justify-center">
+            <Link
+              href="https://walaeddine.Tech"
+              target="_blank"
+              className="logo-hover-container mb-8 h-[80px] flex items-center justify-center"
+            >
               <div className="text-content absolute">
                 <h1 className="text-xl font-semibold text-slate-light mb-2">Wala Eddine Boulebbina</h1>
                 <p className="text-xs text-slate">Software Engineer & Cybersecurity Enthusiast</p>
               </div>
               <Image src="/logo.png" alt="Wala Eddine Logo" width={120} height={120} className="logo-hover" />
-            </div>
+            </Link>
             <div className="mt-16">
               <Navigation onNavClick={() => setIsOpen(false)} />
             </div>

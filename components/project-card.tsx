@@ -24,7 +24,7 @@ export default function ProjectCard({
     <div className="mb-6">
       <div className="flex flex-col md:flex-row gap-4">
         <div className="text-slate-dark text-[10px] md:w-24 md:flex-shrink-0">Featured Project</div>
-        <div className="bg-navy-light/30 rounded-lg p-5 hover:bg-navy-light/40 transition-colors duration-300 cursor-pointer flex-1 border border-slate/5">
+        <div className="bg-navy-light/30 rounded-lg p-5 hover:bg-navy-light/40 transition-all duration-300 cursor-pointer flex-1 border border-slate/5 hover:translate-y-[-2px]">
           <div className="flex flex-col md:flex-row gap-5">
             <div className="md:w-1/4 flex-shrink-0">
               <div className="relative h-32 w-full overflow-hidden rounded-md border border-accent/10">

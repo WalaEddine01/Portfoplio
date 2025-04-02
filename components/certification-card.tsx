@@ -9,7 +9,7 @@ interface CertificationCardProps {
 
 export default function CertificationCard({ title, organization, date, imageUrl }: CertificationCardProps) {
   return (
-    <div className="bg-navy-light/30 rounded-lg p-4 border border-slate/5 hover:bg-navy-light/40 transition-colors duration-300">
+    <div className="certification-card bg-navy-light/30 rounded-lg p-4 border border-slate/5 hover:bg-navy-light/40 transition-colors duration-300">
       <div className="flex items-center justify-between mb-3">
         <div>
           <h4 className="text-sm font-medium text-slate-light">{title}</h4>

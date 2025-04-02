@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <CursorEffect />
-          <div>{children}</div>
+          <div className="relative z-10">{children}</div>
         </ThemeProvider>
       </body>
     </html>

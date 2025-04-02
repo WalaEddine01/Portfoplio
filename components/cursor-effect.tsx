@@ -33,11 +33,11 @@ export default function CursorEffect() {
 
   return (
     <div
-      className={`pointer-events-none fixed inset-0 z-30 transition duration-300 ${
+      className={`pointer-events-none fixed inset-0 z-50 transition duration-300 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       style={{
-        background: `radial-gradient(300px at ${position.x}px ${position.y}px, rgba(176, 176, 176, 0.05), transparent 80%)`,
+        background: `radial-gradient(300px at ${position.x}px ${position.y}px, rgba(176, 176, 176, 0.07), transparent 80%)`,
       }}
     />
   )
