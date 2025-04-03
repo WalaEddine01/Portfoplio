@@ -6,6 +6,12 @@ import CertificationCard from "@/components/certification-card"
 import ElevatorPitch from "@/components/elevator-pitch"
 import Link from "next/link"
 import { FileText } from "lucide-react"
+import certificationimgalxse from "@/public/17-short-specializations-certificate-wala-eddine-boulebbina.png"
+import certificationimgalxAICE from "@/public/40-alx-aice-ai-career-essentials-certificate-wala-eddine-boulebbina.png"
+import certificationimgPMP from "@/public/Screenshot.png"
+import whisperimg from "@/public/1720106801903.jpg"
+import orgschoolimg from "@/public/ORGscholl.png"
+import simpleshellimg from "@/public/simpleshell.png";
 
 export default function Page() {
   return (
@@ -75,19 +81,22 @@ export default function Page() {
                 title="Software Engineering Program"
                 organization="Alx Africa"
                 date="June 2023 - June 2024"
-                imageUrl="/placeholder.svg?height=100&width=100&text=ALX"
+                imageUrl={certificationimgalxse.src}
+                linkto="https://intranet.alxswe.com/certificates/MCrGHE59yn"
               />
               <CertificationCard
                 title="AICE Program"
                 organization="Alx Africa"
                 date="April 2024"
-                imageUrl="/placeholder.svg?height=100&width=100&text=AICE"
+                imageUrl={certificationimgalxAICE.src}
+                linkto="https://intranet.alxswe.com/certificates/LNMfTszFyP"
               />
               <CertificationCard
                 title="35 hour PMP Training"
                 organization="benhamouda consulting"
                 date="February 2025"
-                imageUrl="/placeholder.svg?height=100&width=100&text=PMP"
+                imageUrl={certificationimgPMP.src}
+                linkto="https://drive.google.com/file/d/1pwD79uiBd66WkKZo_CwICpv0ZvCVU8eo/view?usp=drive_link"
               />
             </div>
           </div>
@@ -163,7 +172,7 @@ export default function Page() {
             dateRange="July 2024 - Present"
             title="Project Manager & Developer"
             company="Algerian Tech Maker"
-            companyUrl="https://algerian-tech-maker.com"
+            companyUrl="https://www.facebook.com/Algeriantechmakersdz2021/"
             description="Leading and contributing to tech-driven projects, collaborating with teams to develop innovative solutions, and supporting a community for aspiring developers."
             technologies={["Project Management", "Web Development", "Team Leadership"]}
           />
@@ -171,7 +180,7 @@ export default function Page() {
             dateRange="July 2024 - Present"
             title="Content Creator & Media"
             company="Algerian Tech Maker"
-            companyUrl="https://algerian-tech-maker.com"
+            companyUrl="https://www.facebook.com/Algeriantechmakersdz2021/"
             description="Hosting live sessions and creating engaging content to share tech insights and support the community."
             technologies={["Content Creation", "Live Streaming", "Technical Writing"]}
           />
@@ -182,24 +191,24 @@ export default function Page() {
           <ProjectCard
             title="OrgSchool"
             description="A comprehensive Student Management System (SMS) designed to streamline educational administration processes, including student enrollment, grade tracking, and attendance management."
-            imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://github.com/WalaEddine01"
+            imageUrl={orgschoolimg.src}
+            projectUrl="https://github.com/WalaEddine01/OrgSchool-portfolio-project"
             technologies={["React", "Node.js", "MongoDB", "Express"]}
-            stars={120}
+            /*stars={}*/
           />
           <ProjectCard
             title="Whisper"
             description="A real-time chat application with end-to-end encryption, allowing secure communication between users. Features include message history, file sharing, and user authentication."
-            imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://github.com/WalaEddine01"
+            imageUrl={whisperimg.src}
+            projectUrl="https://github.com/WalaEddine01/Whisper"
             technologies={["React", "Socket.io", "Node.js", "MongoDB"]}
-            stars={85}
+            /*stars={85}*/
           />
           <ProjectCard
             title="Simple Shell"
             description="A bash-like shell implementation that supports basic command execution, piping, redirection, and environment variable management. Built as a demonstration of low-level programming skills."
-            imageUrl="/placeholder.svg?height=200&width=300"
-            projectUrl="https://github.com/WalaEddine01"
+            imageUrl={simpleshellimg.src}
+            projectUrl="https://github.com/WalaEddine01/simple_shell"
             technologies={["C", "Linux", "System Programming"]}
           />
         </section>

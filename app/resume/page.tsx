@@ -14,10 +14,12 @@ export default function ResumePage() {
           <h1 className="text-2xl font-bold text-slate-light mb-6">Wala Eddine Boulebbina</h1>
 
           <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-sm text-slate mb-8">
-            <div>Email: Wala.eddine.boulebbina@gmail.com</div>
-            <div>LinkedIn: Wala-eddine-boulebbina</div>
-            <div>Github: WalaEddine01</div>
-          </div>
+  <div><a href="mailto:Wala.eddine.boulebbina@gmail.com" className="text-blue-500">Email: Wala.eddine.boulebbina@gmail.com</a></div>
+  <div><a href="https://www.linkedin.com/in/Wala-eddine-boulebbina" className="text-blue-500">LinkedIn: Wala-eddine-boulebbina</a></div>
+  <div><a href="https://walaeddine.tech" className="text-blue-500">Website: walaeddine.tech</a></div>
+  <div><a href="https://github.com/WalaEddine01" className="text-blue-500">Github: WalaEddine01</a></div>
+</div>
+
 
           <section className="mb-8">
             <h2 className="text-lg font-semibold text-slate-light mb-3 pb-1 border-b border-slate/10">SUMMARY</h2>

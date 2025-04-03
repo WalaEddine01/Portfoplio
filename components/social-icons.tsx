@@ -13,10 +13,10 @@ export default function SocialIcons() {
       <Link href="mailto:Wala.eddine.boulebbina@gmail.com" target="_blank" aria-label="Email">
         <Mail className="w-4 h-4 text-slate hover:text-accent transition-colors duration-200" />
       </Link>
-      <Link href="/resume" aria-label="Resume">
+      <Link href="https://drive.google.com/file/d/1XjH4O0PJZu5oaW87aA_mfhjCGmRo4oqH/view?usp=sharing" aria-label="Resume">
         <FileText className="w-4 h-4 text-slate hover:text-accent transition-colors duration-200" />
       </Link>
-      <Link href="https://algerian-tech-maker.com" target="_blank" aria-label="Website">
+      <Link href="https://walaeddine.tech" target="_blank" aria-label="Website">
         <Globe className="w-4 h-4 text-slate hover:text-accent transition-colors duration-200" />
       </Link>
     </div>

@@ -10,7 +10,7 @@ export default function ElevatorPitch() {
         <div className="aspect-[9/16] w-full max-w-[250px] mx-auto">
           <div className="relative w-full h-0 pb-[177.78%]">
             <iframe
-              src=""
+              /*src=""*/
               title="Who am I?"
               className="absolute top-0 left-0 w-full h-full rounded-md"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

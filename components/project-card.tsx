@@ -27,14 +27,10 @@ export default function ProjectCard({
         <div className="bg-navy-light/30 rounded-lg p-5 hover:bg-navy-light/40 transition-all duration-300 cursor-pointer flex-1 border border-slate/5 hover:translate-y-[-2px]">
           <div className="flex flex-col md:flex-row gap-5">
             <div className="md:w-1/4 flex-shrink-0">
-              <div className="relative h-32 w-full overflow-hidden rounded-md border border-accent/10">
-                <Image
-                  src={imageUrl || "/placeholder.svg"}
-                  alt={title}
-                  fill
-                  className="object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
+            <div className="relative w-full overflow-hidden rounded-md border border-accent/10">
+              <img src={imageUrl} alt={title} className="w-full object-cover" />
+            </div>
+
             </div>
             <div className="md:w-3/4">
               <Link href={projectUrl} target="_blank" className="group">
