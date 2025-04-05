@@ -10,7 +10,7 @@ export default function SocialIcons() {
       <Link href="https://linkedin.com/in/Wala-eddine-boulebbina" target="_blank" aria-label="LinkedIn">
         <Linkedin className="w-4 h-4 text-slate hover:text-accent transition-colors duration-200" />
       </Link>
-      <Link href="mailto:Wala.eddine.boulebbina@gmail.com" target="_blank" aria-label="Email">
+      <Link href="mailto:Wala.eddine.boulebbina@gmail.com" aria-label="Email">
         <Mail className="w-4 h-4 text-slate hover:text-accent transition-colors duration-200" />
       </Link>
       <Link href="https://drive.google.com/file/d/1XjH4O0PJZu5oaW87aA_mfhjCGmRo4oqH/view?usp=sharing" aria-label="Resume">

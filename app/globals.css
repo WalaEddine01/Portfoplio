@@ -156,11 +156,11 @@
 }
 
 .nav-link:hover {
-  color: #d0d0d0;
+  color: #ffffff;
 }
 
 .nav-link.active {
-  color: #b0b0b0;
+  color: #ffffff;
 }
 
 .tech-tag {

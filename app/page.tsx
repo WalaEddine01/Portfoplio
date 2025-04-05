@@ -5,7 +5,7 @@ import TechBadge from "@/components/tech-badge"
 import CertificationCard from "@/components/certification-card"
 import ElevatorPitch from "@/components/elevator-pitch"
 import Link from "next/link"
-import { FileText } from "lucide-react"
+import { FileText, Mail } from "lucide-react"
 import certificationimgalxse from "@/public/17-short-specializations-certificate-wala-eddine-boulebbina.png"
 import certificationimgalxAICE from "@/public/40-alx-aice-ai-career-essentials-certificate-wala-eddine-boulebbina.png"
 import certificationimgPMP from "@/public/Screenshot.png"
@@ -24,29 +24,29 @@ export default function Page() {
 
           <div className="flex flex-col lg:flex-row gap-6">
             <div className="lg:w-2/3">
-            <p className="text-slate leading-relaxed text-sm max-w-2xl">
-    <span className="block mb-4">
-        Wala Eddine Boulebbina – Software Engineer & Cybersecurity Enthusiast focused on designing and developing software solutions.
-    </span>
+              <p className="text-slate leading-relaxed text-sm max-w-2xl">
+                <span className="block mb-4">
+                    Wala Eddine Boulebbina – Software Engineer & Cybersecurity Enthusiast focused on designing and developing software solutions.
+                </span>
+    
+                <span className="block mb-4">
+                    Experienced in backend development with strong programming skills in C, Python, JavaScript, and TypeScript.
+                </span>
+    
+                <span className="block mb-4">
+                    Currently enrolled in the ALX Backend Pro Dev program, focusing on advanced backend concepts.
+                </span>
+    
+                <span className="block mb-4">
+                    Has built low-level projects like a basic compiler and a simple shell.
+                </span>
+    
+                <span className="block mb-4">
+                    Passionate about creating scalable, efficient, and maintainable systems, with hands-on experience in project management and Agile methodologies.
+                </span>
+              </p>
 
-    <span className="block mb-4">
-        Experienced in backend development with strong programming skills in C, Python, JavaScript, and TypeScript.
-    </span>
-
-    <span className="block mb-4">
-        Currently enrolled in the ALX Backend Pro Dev program, focusing on advanced backend concepts.
-    </span>
-
-    <span className="block mb-4">
-        Has built low-level projects like a basic compiler and a simple shell.
-    </span>
-
-    <span className="block mb-4">
-        Passionate about creating scalable, efficient, and maintainable systems, with hands-on experience in project management and Agile methodologies.
-    </span>
-</p>
-
-              <div className="mt-6">
+              <div className="mt-6 flex gap-4">
                 <Link
                   href="/resume"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-navy-light/50 hover:bg-navy-light/70 text-slate-light rounded-md border border-slate/10 transition-colors"
@@ -54,10 +54,17 @@ export default function Page() {
                   <FileText className="w-4 h-4" />
                   <span>View Full Resume</span>
                 </Link>
+                <a
+                    href="mailto:Wala.eddine.boulebbina@gmail.com"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-navy-light/50 hover:bg-navy-light/70 text-slate-light rounded-md border border-slate/10 transition-colors"
+                    >
+                    <Mail className="w-4 h-4" />
+                    <span>Get in touch</span>
+                </a>
               </div>
             </div>
 
-            <div className="lg:w-1/3">
+            <div className="lg:w-1/4">
               <ElevatorPitch />
             </div>
           </div>
