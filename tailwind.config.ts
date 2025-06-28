@@ -33,10 +33,6 @@ const config: Config = {
           DEFAULT: "#a0a0a0", // Medium gray for secondary text
           dark: "#707070", // Darker gray for tertiary text
         },
-        accent: {
-          DEFAULT: "#b0b0b0", // Silver accent from the image
-          dark: "#909090", // Darker silver for hover states
-        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -92,4 +88,3 @@ const config: Config = {
 }
 
 export default config
-
