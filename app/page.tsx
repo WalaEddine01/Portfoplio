@@ -149,14 +149,14 @@ export default function Page() {
 
         <section id="experience" className="mb-16">
           <h2 className="text-lg font-semibold text-slate-light mb-3">Experience</h2>
-          <JobExperience
+          {/* <JobExperience
             dateRange="February 2023 - March 2024"
             title="Software Engineer"
             company="Alx Africa"
             companyUrl="https://www.alxafrica.com"
             description="Designed, built, and deployed OrgSchool, a comprehensive Student Management System (SMS) that streamlines educational administration processes."
             technologies={["JavaScript", "React", "Node.js", "MongoDB"]}
-          />
+          /> */}
           <JobExperience
             dateRange="June 2024 - July 2024"
             title="Software Engineer & Project Manager"
@@ -195,14 +195,14 @@ export default function Page() {
 
         <section id="projects" className="mb-16">
           <h2 className="text-lg font-semibold text-slate-light mb-3">Projects</h2>
-          <ProjectCard
+          {/* <ProjectCard
             title="OrgSchool"
             description="A comprehensive Student Management System (SMS) designed to streamline educational administration processes, including student enrollment, grade tracking, and attendance management."
             imageUrl={orgschoolimg.src}
             projectUrl="https://github.com/WalaEddine01/OrgSchool-portfolio-project"
             technologies={["React", "Node.js", "MongoDB", "Express"]}
-            /*stars={}*/
-          />
+            // stars prop intentionally omitted or set to a valid value if needed
+          /> */}
           <ProjectCard
             title="Whisper"
             description="A real-time chat application with end-to-end encryption, allowing secure communication between users. Features include message history, file sharing, and user authentication."
