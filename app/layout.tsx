@@ -3,12 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import dynamic from "next/dynamic"
-
-// Dynamically import CursorEffect with SSR disabled
-const CursorEffect = dynamic(() => import("@/components/cursor-effect"), {
-  ssr: false,
-})
+import ClientCursorEffect from "@/components/client-cursor-effect"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -37,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <CursorEffect />
+          <ClientCursorEffect />
           <div className="relative z-10">{children}</div>
         </ThemeProvider>
       </body>
