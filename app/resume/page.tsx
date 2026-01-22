@@ -1,44 +1,27 @@
 import Link from "next/link"
 import { ArrowLeft, Download } from "lucide-react"
+import Sidebar from "@/components/sidebar"
+import ProjectCard from "@/components/project-card"
+import JobExperience from "@/components/job-experience"
+import TechBadge from "@/components/tech-badge"
+import CertificationCard from "@/components/certification-card"
+import ElevatorPitch from "@/components/elevator-pitch"
+import { FileText, Mail } from "lucide-react"
+import certificationimgalxse from "@/public/17-short-specializations-certificate-wala-eddine-boulebbina.png"
+import certificationimgalxAICE from "@/public/40-alx-aice-ai-career-essentials-certificate-wala-eddine-boulebbina.png"
+import certificationimgPMP from "@/public/Screenshot.png"
+import whisperimg from "@/public/1720106801903.jpg"
+import orgschoolimg from "@/public/ORGscholl.png"
+import simpleshellimg from "@/public/simpleshell.png";
 
 export default function ResumePage() {
   return (
-    <div className="min-h-screen bg-navy p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 mb-6 text-slate hover:text-accent transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Back to Portfolio</span>
-        </Link>
-
-        <div className="bg-navy-light/30 backdrop-blur-sm rounded-lg border border-slate/10 p-6 md:p-8">
-          <h1 className="text-2xl font-bold text-slate-light mb-6">
-            My Resume
-          </h1>
-
-          {/* Embedded PDF Viewer */}
-          <div className="w-full aspect-[4/3] mb-6 rounded-md overflow-hidden border border-slate/20">
-            <iframe
-              src="/Wala_Eddine_Boulebbina_Resume.pdf"
-              className="w-full h-full"
-              title="Resume PDF"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Download Button */}
-          <a
-            href="/Wala_Eddine_Boulebbina_Resume.pdf"
-            download
-            className="inline-flex items-center gap-2 px-4 py-2 bg-navy-light/50 hover:bg-navy-light/70 text-slate-light rounded-md border border-slate/10 transition-colors"
-          >
-            <Download className="w-4 h-4" />
-            <span>Download PDF</span>
-          </a>
-        </div>
-      </div>
+    <div className="flex flex-col md:flex-row">
+      <main className="main-content">
+        <section id="about" className="mb-16 pt-4">
+          <h2 className="text-lg font-semibold text-slate-light mb-3">Blogs</h2>
+        </section>
+      </main>
     </div>
   )
 }

@@ -26,23 +26,23 @@ export default function Page() {
             <div className="lg:w-2/3">
               <p className="text-slate leading-relaxed text-sm max-w-2xl">
                 <span className="block mb-4">
-                    Wala Eddine Boulebbina – Software Engineer & Cybersecurity Enthusiast focused on designing and developing software solutions.
+                    Information Security student and Software Engineer with two years of experience.
                 </span>
     
                 <span className="block mb-4">
-                    Experienced in backend development with strong programming skills in C, Python, JavaScript, and TypeScript.
+                     including one year of volunteering at Algerian Tech Makers (Bunian).
                 </span>
     
                 <span className="block mb-4">
-                    Currently enrolled in the ALX Backend Pro Dev program, focusing on advanced backend concepts.
+                     focused on creating educational content to support the tech community
                 </span>
     
                 <span className="block mb-4">
-                    Has built low-level projects like a basic compiler and a simple shell.
+                     contributing to several open-source projects using different tech stacks like MERN, Python-Flask And C.
                 </span>
     
                 <span className="block mb-4">
-                    Passionate about creating scalable, efficient, and maintainable systems, with hands-on experience in project management and Agile methodologies.
+                    Experienced in project management and leading teams.
                 </span>
               </p>
 
@@ -52,7 +52,7 @@ export default function Page() {
                   className="inline-flex items-center gap-2 px-4 py-2 bg-navy-light/50 hover:bg-navy-light/70 text-slate-light rounded-md border border-slate/10 transition-colors"
                 >
                   <FileText className="w-4 h-4" />
-                  <span>View Full Resume</span>
+                  <span>WriteUps</span>
                 </Link>
                 <a
                     href="mailto:Wala.eddine.boulebbina@gmail.com"
